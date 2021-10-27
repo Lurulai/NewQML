@@ -15,7 +15,11 @@ public:
     NewQML(QWidget *parent = nullptr);
     ~NewQML();
 
+private slots:
+    void on_findButton_clicked();
+
 private:
     Ui::NewQML *ui;
+    void loadTextFile();
 };
 #endif // NEWQML_H
